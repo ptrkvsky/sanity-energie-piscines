@@ -9,6 +9,7 @@ import schemaTypes from "all:part:@sanity/base/schema-type";
 import home from "./documents/home";
 import page from "./documents/page";
 import siteSettings from "./documents/siteSettings";
+import contact from "./documents/contact";
 // objects
 import blockContent from "./objects/blockContent";
 import link from "./objects/link";
@@ -32,6 +33,7 @@ export default createSchema({
   types: schemaTypes
     .concat([
       blockContent,
+      contact,
       home,
       link,
       mainImage,

@@ -50,6 +50,7 @@ export default {
         { type: "illustration" },
         { type: "highlight" },
         { type: "bodySection" },
+        { type: "imageAndText" },
       ],
       validation: (Rule) => Rule.required(),
     },
