@@ -31,10 +31,10 @@ export default {
       validation: (Rule) => Rule.required(),
     },
     {
-      type: "image",
-      name: "image",
+      name: "mainImage",
       title: "Image",
-      description: "Image principale",
+      type: "mainImage",
+      description: `Image`,
       validation: (Rule) => Rule.required(),
     },
   ],
