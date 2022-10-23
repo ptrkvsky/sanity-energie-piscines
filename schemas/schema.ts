@@ -10,6 +10,7 @@ import home from './documents/home';
 import page from './documents/page';
 import siteSettings from './documents/siteSettings';
 import contact from './documents/contact';
+import avis from './documents/avis';
 // objects
 import blockContent from './objects/blockContent';
 import link from './objects/link';
@@ -35,6 +36,7 @@ export default createSchema({
     .concat([
       blockContent,
       contact,
+      avis,
       home,
       link,
       mainImage,

@@ -95,8 +95,23 @@ export default {
         { type: 'highlight' },
         { type: 'bodySection' },
         { type: 'imageAndText' },
+        { type: 'contactEntretien' },
+        // { type: 'contactEntretien' },
       ],
       validation: (Rule) => Rule.required(),
+      group: 'content',
+    },
+    {
+      name: 'titleAvis',
+      title: 'Titre section avis',
+      type: 'string',
+      group: 'content',
+    },
+    {
+      name: 'avisSection',
+      type: 'array',
+      title: 'Avis',
+      of: [{ type: 'reference', to: { type: 'avis' } }],
       group: 'content',
     },
   ],
@@ -104,8 +119,7 @@ export default {
   preview: {
     select: {
       title: 'title',
-
-      media: 'mainImage',
+      media: 'vignette',
     },
     prepare(selection) {
       const { title } = selection;
